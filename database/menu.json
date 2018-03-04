@@ -1,0 +1,39 @@
+{
+	"HIMADRI": {
+			"MONDAY": {
+				"BREAKFAST": [],
+				"LUNCH": [],
+				"DINNER": []
+			},
+			"TUESDAY": {
+				"BREAKFAST": [],
+				"LUNCH": [],
+				"DINNER": []
+			},
+			"WEDNESDAY": {
+				"BREAKFAST": [],
+				"LUNCH": [],
+				"DINNER": []
+			},
+			"THRUSDAY": {
+				"BREAKFAST": [],
+				"LUNCH": [],
+				"DINNER": []
+			},
+			"FRIDAY": {
+				"BREAKFAST": [],
+				"LUNCH": [],
+				"DINNER": []
+			},
+			"SATURDAY": {
+				"BREAKFAST": [],
+				"LUNCH": [],
+				"DINNER": []
+			},
+			"SUNDAY": {
+				"BREAKFAST": [],
+				"LUNCH": [],
+				"DINNER": []
+			}
+	}
+}

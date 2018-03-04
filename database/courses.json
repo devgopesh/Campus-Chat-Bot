@@ -1,0 +1,17 @@
+{
+	"CSS226" : {
+		"code": "CSD226",
+		"name": "EVS",
+		"credit": "3"
+	},
+	"CSD223" : {
+		"code": "CSD223",
+		"name": "DATA STRUCTURES",
+		"credit": "3"
+	},
+	"CSD225" : {
+		"code": "CSD225",
+		"name": "THEORY OF COMPUTATION",
+		"credit": "3"
+	}
+}

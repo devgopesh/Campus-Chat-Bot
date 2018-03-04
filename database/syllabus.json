@@ -1,0 +1,19 @@
+{
+	"MI5": {
+		"1": [{
+			"course_name": "abc",
+			"course_code": "as",
+			"course_credit": "3"
+		},
+		{
+			"course_name": "aghc",
+			"course_code": "as",
+			"course_credit": "3"
+		}],
+		"2": [{
+			"course_name": "abc",
+			"course_code": "agh",
+			"course_credit": "3"
+		}]
+	}
+}
