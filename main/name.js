@@ -1,7 +1,6 @@
 var fs = require("fs-extra");
 
 var name_db = "./database/name_database.json";
-
 var name_database = JSON.parse(fs.readFileSync(name_db));
 
 function get_name(name)

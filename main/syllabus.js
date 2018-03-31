@@ -20,11 +20,11 @@ function get_syllabus(roll) {
 }
 
 function pretty_get_syllabus(syl,sem) {
+	var str = "";
 	if(syl[sem] === undefined) {
-		var str = "no course";
+		str = "no course";
 		return str;
 	} 
-	var str = "";
 	for(var i=0; i<syl[sem].length; i++) {
 		var name = syl[sem][i].course_name;
 		var code = syl[sem][i].course_code;
