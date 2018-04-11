@@ -5,9 +5,9 @@ var request = require('request');
 
 var rootFolder = path.resolve('.');
 var zipPath = path.resolve(rootFolder, '../testluisbots.zip');
-var kuduApi = 'https://testluisbots.scm.azurewebsites.net/api/zip/site/wwwroot';
-var userName = '$testluisbots';
-var password = 'eEE8FrvtzBwiGpY8Lf2LNMTEN8LJ25ksDaztnWbbqLnHo0CRSli8hALygx43';
+var kuduApi = '';
+var userName = '';
+var password = '';
 
 function uploadZip(callback) {
   fs.createReadStream(zipPath).pipe(request.put(kuduApi, {

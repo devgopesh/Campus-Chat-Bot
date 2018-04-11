@@ -10,7 +10,7 @@ var botbuilder_azure = require("botbuilder-azure");
 var builder_cognitiveservices = require("botbuilder-cognitiveservices");
 var Cleverbot = require('cleverbot-node');
 var cleverbot = new Cleverbot;
-cleverbot.configure({botapi: "CC77q1BzPZSmvS40gcd3XveSqNA"});
+cleverbot.configure({botapi: ""});
 
 var useEmulator = (process.env.NODE_ENV == 'development');
 
@@ -65,11 +65,11 @@ if (activity.membersAdded) {
 }});
 
 // Main dialog with LUIS
-var recognizer = new builder.LuisRecognizer('https://westus.api.cognitive.microsoft.com/luis/v2.0/apps/8dd9269d-e36e-47da-9fa5-0d6aaa4d1d7a?subscription-key=a39218a11a7d4d1dbb1e16b27e58a820&verbose=true&timezoneOffset=330');
+var recognizer = new builder.LuisRecognizer('');
 var intents = new builder.IntentDialog({ recognizers: [recognizer] });
 var recognizerqna = new builder_cognitiveservices.QnAMakerRecognizer({
-            knowledgeBaseId: "1163618b-1d95-4a68-9975-84ab2be545c6",
-            subscriptionKey: "9fe32d3701b740b5b693ea976fc36504"
+            knowledgeBaseId: "",
+            subscriptionKey: ""
 });
 var basicQnAMakerDialog = new builder_cognitiveservices.QnAMakerDialog({
                 recognizers: [recognizerqna],
@@ -466,73 +466,3 @@ bot.dialog('/review', [
         session.endDialog();
     }
 ]);
-
-/*bot.dialog('/qna', [
-    function (session) {
-        builder.Prompts.text(session, 'Ask me anything!');
-    },
-    function (session, results) {
-        var postBody = '{"question":"' + results.response + '"}';
-            request({
-                url: "https://westus.api.cognitive.microsoft.com/qnamaker/v2.0/knowledgebases/1163618b-1d95-4a68-9975-84ab2be545c6/generateAnswer",
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Ocp-Apim-Subscription-Key': "9fe32d3701b740b5b693ea976fc36504"
-                },
-                body: postBody
-            },
-            function (error, response, body) {
-                var result;
-                result = JSON.parse(body);
-                result.score = result.score / 100;
-                session.send(result.answers[0].answer);
-                //session.replaceDialog('/qna', { reprompt: true });
-            }
-            );
-       session.endDialog();
-    }
-]);
-
-bot.dialog('/mess', [
-    function(session,args,next){
-        var hostel = builder.EntityRecognizer.findEntity(args.entities, 'hostelname');
-        if(!hostel){
-            builder.Prompts.text(session, "Which hostel?");
-        } else {
-            next( {response: hostel.entity});
-        }
-    },
-    function(session,results){
-        if (results.response) {
-            session.userData.hostel = results.response;
-        }
-        var hostel = mess.get_mess_hostel(session.userData.hostel);
-        var day = "monday";
-        if(hostel!==null)
-        {
-            var menu_day = mess.get_mess_day(hostel,day);
-            var pretty_menu = mess.pretty_mess(menu_day);
-            session.send(pretty_menu[0]);
-            session.send(pretty_menu[1]);
-            session.send(pretty_menu[2]);
-        }
-        else
-        {
-            session.userData.hostel = undefined;
-            session.send("Invalid Hostel provided!");
-        }
-        session.endDialog();
-    }
-]);
-
-if (useEmulator) {
-    var server = restify.createServer();
-    server.listen(3978, function() {
-        console.log('test bot endpoint at http://localhost:3978/api/messages');
-    });
-    server.post('/api/messages', connector.listen());
-} else {
-    module.exports = { default: connector.listen() };
-}  */ 
-
