@@ -9,3 +9,10 @@ Campus chat bot is basically an info bot which provides information about colleg
 6. Syllabus : This provides the syllabus to the user of a particular sem or for all sem by sending a message "my syllabus".
 7. Review : By using this functionality a user can see the review of a particular subject as well as can add a review by sending the message "review".
 8. Schedule : This provides the user to see schedule for a particular day or for whole week by sending "my schedule" as message to bot.
+  
+#Technlogy and APIs used
+
+1.The bot is built on the Microsoft Bot Builder Framework in Node.js and uses various APIs
+2.It uses the Language Understanding Intelligent Service (LUIS) that lets the bot to understand language.
+3.It uses CleverBot API to converse with the user in the conversation mode.
+4.It uses the QnA Maker that enabled us to build, train and publish a simple question and answer bot based on FAQ URLs.
