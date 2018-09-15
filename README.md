@@ -10,7 +10,7 @@ Campus chat bot is basically an info bot which provides information about colleg
 7. Review : By using this functionality a user can see the review of a particular subject as well as can add a review by sending the message "review".
 8. Schedule : This provides the user to see schedule for a particular day or for whole week by sending "my schedule" as message to bot.
   
-#Technlogy and APIs used
+# Technlogy and APIs used
 
 1. The bot is built on the Microsoft Bot Builder Framework in Node.js and uses various APIs.
 2. It uses the Language Understanding Intelligent Service (LUIS) that lets the bot to understand language.
