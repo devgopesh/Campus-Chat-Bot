@@ -12,7 +12,7 @@ Campus chat bot is basically an info bot which provides information about colleg
   
 # Technlogy and APIs used
 
-1. The bot is built on the Microsoft Bot Builder Framework in Node.js and uses various APIs.
-2. It uses the Language Understanding Intelligent Service (LUIS) that lets the bot to understand language.
-3. It uses CleverBot API to converse with the user in the conversation mode.
-4. It uses the QnA Maker that enabled us to build, train and publish a simple question and answer bot based on FAQ URLs.
+1. The bot is built on the [Microsoft Bot Builder Framework](https://dev.botframework.com/) in Node.js and uses various APIs.
+2. It uses the [Language Understanding Intelligent Service (LUIS)](https://www.luis.ai/home) that lets the bot to understand language.
+3. It uses [CleverBot](https://www.cleverbot.com/) API to converse with the user in the conversation mode.
+4. It uses the [QnA Maker](https://www.qnamaker.ai/) that enabled us to build, train and publish a simple question and answer bot based on FAQ URLs.
