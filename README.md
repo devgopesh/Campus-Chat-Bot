@@ -1,5 +1,5 @@
 # Campus-Chat-Bot
-Campus chat bot is basically an info bot which provides information about college activities and students.
+Campus chat bot is basically an information bot which provides information about the college activities and students.
 
 1. Profile : The first time user says a Hi, the bot replies back by asking the user, his/her entry number which will be used for all future correspondences and chats.
 2. FAQ : The user can ask faqs related to any institute policy. The FAQ mode can be started by sending faq as a message.
